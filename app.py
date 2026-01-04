@@ -66,7 +66,7 @@ with st.sidebar:
     st.info("💡 手機版操作：點擊左上角箭頭可收合此選單。")
 
 # 2. 處理輸入並掃描
-symbols = [s.strip() for s.strip() in user_input.split(",")]
+symbols = [s.strip() for s in user_input.split(",")]
 results = []
 
 if st.button("🚀 開始掃描", use_container_width=True):
