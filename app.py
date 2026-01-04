@@ -52,8 +52,7 @@ const App: React.FC = () => {
       
       // Simulate a notification trigger immediately for demo purposes if price is near stop
       if (stock.price <= stock.vcp.stopLoss * 1.05) {
-        addNotification(`追蹤提醒: ${stock.name}`, `${stock.symbol} 目前股價 ${stock.price} 接近回測地板價 ${stock.vcp.stopLoss}，請留意買點。`);
-      }
+             }
     }
   };
 
